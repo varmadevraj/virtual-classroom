@@ -22,16 +22,16 @@ function Login() {
   return (
     <div className='login-container'>
       <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
+      <form className="forms" onSubmit={handleSubmit}>
+        <div className='label1'>
           <label>Email:</label>
           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </div>
-        <div>
+        <div className='label1'>
           <label>Password:</label>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
-        <button type="submit">Login</button>
+        <button className="buttons" type="submit">Login</button>
       </form>
     </div>
   );
